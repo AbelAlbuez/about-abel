@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, MutableRefObject, RefObject } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Gallery, Item } from "react-photoswipe-gallery";
 import "photoswipe/dist/photoswipe.css";
@@ -10,6 +10,7 @@ import ModalOne from "./modal/ModalOne";
 import ModalTwo from "./modal/ModalTwo";
 
 Modal.setAppElement("#__next");
+type ItemRef<T> = MutableRefObject<T | null> | RefObject<T | null>;
 
 const ReactTooltip = dynamic(() => import("react-tooltip"), {
   ssr: false,
@@ -128,13 +129,12 @@ const Portfolio = () => {
                           <Image
                             width={300}
                             height={300}
-                            srl_gallery_image="true"
                             src="/img/portfolio/4.jpg"
                             alt="Childhood"
                             data-tip
                             data-for="shot"
                             role="button"
-                            ref={ref}
+                            ref={ref as ItemRef<HTMLImageElement>}
                             onClick={open}
                           />
                         )}
@@ -169,13 +169,12 @@ const Portfolio = () => {
                           <Image
                             width={300}
                             height={300}
-                            srl_gallery_image="true"
                             src="/img/portfolio/3.jpg"
                             alt="Childhood"
                             data-tip
                             data-for="shot2"
                             role="button"
-                            ref={ref}
+                            ref={ref as ItemRef<HTMLImageElement>}
                             onClick={open}
                           />
                         )}
@@ -348,13 +347,12 @@ const Portfolio = () => {
                           <Image
                             width={300}
                             height={300}
-                            srl_gallery_image="true"
                             src="/img/portfolio/4.jpg"
                             alt="Childhood"
                             data-tip
                             data-for="shot"
                             role="button"
-                            ref={ref}
+                            ref={ref as ItemRef<HTMLImageElement>}
                             onClick={open}
                           />
                         )}
@@ -388,13 +386,12 @@ const Portfolio = () => {
                           <Image
                             width={300}
                             height={300}
-                            srl_gallery_image="true"
                             src="/img/portfolio/3.jpg"
                             alt="Childhood"
                             data-tip
                             data-for="shot2"
                             role="button"
-                            ref={ref}
+                            ref={ref as ItemRef<HTMLImageElement>}
                             onClick={open}
                           />
                         )}

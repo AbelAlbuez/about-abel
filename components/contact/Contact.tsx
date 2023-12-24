@@ -8,6 +8,8 @@ const Contact = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
+    const myForm = document.getElementById("myForm") as HTMLFormElement;
+
     e.preventDefault();
     emailjs
       .sendForm(
@@ -27,7 +29,7 @@ const Contact = () => {
             draggable: true,
             progress: undefined,
           });
-          document.getElementById("myForm").reset();
+          myForm.reset();
         },
         (error) => {
           toast.error("Ops Message Not Sent!", {

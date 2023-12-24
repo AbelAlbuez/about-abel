@@ -5,8 +5,20 @@ import ShareSocial from "../social-share/ShareSocial";
 
 Modal.setAppElement("#__next");
 
+interface ServicesModel {
+  id: number;
+  no: string;
+  title: string;
+  text: string;
+  largeImg: string;
+  largeTitle: string;
+  poster: string;
+  date: string;
+  descriptions: JSX.Element;
+}
+
 const Services = () => {
-  const [singleData, setSingleData] = useState({});
+  const [singleData, setSingleData] = useState<ServicesModel>(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleBServicesData = (id) => {

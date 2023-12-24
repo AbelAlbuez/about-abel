@@ -5,9 +5,17 @@ import newsData from "../../data/newsData";
 import ShareSocial from "../social-share/ShareSocial";
 
 Modal.setAppElement("#__next");
+export interface NewsModel {
+  id: number;
+  title: string;
+  img: string;
+  poster: string;
+  date: string;
+  descriptions: JSX.Element;
+}
 
 const News = () => {
-  const [singleData, setSingleData] = useState({});
+  const [singleData, setSingleData] = useState<NewsModel>(null);
   const [isOpen, setIsOpen] = useState(false);
 
   const handleblogsData = (id) => {
