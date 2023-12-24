@@ -3,18 +3,13 @@ import React from "react";
 const SocialShare = [
   {
     iconName: "facebook",
-    link: "https://www.facebook.com/",
+    link: "https://www.facebook.com/abelalbuez",
   },
-  { iconName: "twitter", link: "https://twitter.com/" },
+  { iconName: "twitter", link: "https://twitter.com/abelalbuez" },
   {
     iconName: "instagram",
-    link: "https://www.instagram.com/",
-  },
-  { iconName: "dribbble", link: "https://dribbble.com/" },
-  {
-    iconName: "tik-tok",
-    link: "https://www.tiktok.com/",
-  },
+    link: "https://www.instagram.com/abelalbuez",
+  }
 ];
 const Social = () => {
   return (

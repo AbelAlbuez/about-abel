@@ -4,13 +4,13 @@ const CopyRight = () => {
   return (
     <div className="copyright">
       <p>
-        &copy; {new Date().getFullYear()} Tokyo <br /> Created by
+        &copy; {new Date().getFullYear()} Abel Albuez <br /> Created by
         <a
-          href="https://themeforest.net/user/ib-themes"
+          href="https://www.instagram.com/abelalbuez/"
           target="_blank"
           rel="noreferrer"
         >
-          Ib-Themes
+          Abel Albuez
         </a>
       </p>
     </div>

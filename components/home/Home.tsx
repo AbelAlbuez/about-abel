@@ -23,8 +23,8 @@ const Home = () => {
               <Typed
                 strings={[
                   "Programmer",
-                  "Investigative reporter",
-                  "Photographer",
+                  "Backend developer",
+                  "Frontend developer",
                   "Writer",
                 ]}
                 loop
@@ -33,8 +33,8 @@ const Home = () => {
             </h4>
 
             <p className="job">
-              Creative Photographer based in New York and happy to travel all
-              over Europe to capture photos.
+              Software Specialist from the Dominican Republic, and happy to make
+              the impossible possible through my code.
             </p>
             {/* END JOB */}
             <Social />
