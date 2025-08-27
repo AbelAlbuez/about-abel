@@ -30,9 +30,10 @@ export default function Home() {
                     <h1 className="text-ink text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
                       From lines of code to big ideas. Software and AI Engineer
                     </h1>
-                    <h2 className="text-ink text-sm @[480px]:text-base">
-                      I'm a software and AI engineer passionate about building innovative solutions. Explore my portfolio to see my work and learn more about my experience.
-                    </h2>
+                    <p className="max-w-prose text-slate-600">
+                      {"I'm a software and AI engineer passionate about building innovative solutions. Explore my portfolio to see my work and learn more about my experience."}
+                    </p>
+
                   </div>
                   <a
                     href="/blog"
