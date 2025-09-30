@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Abel's Personal Website Color System */
+    --background: 0 0% 6%;           /* #0F0F0F - almost black */
+    --foreground: 0 0% 93%;          /* #EDEDED - primary text */
+
+    --surface: 0 0% 11%;             /* #1C1C1C - dark gray cards/surfaces */
+    --surface-foreground: 0 0% 93%;  /* #EDEDED - text on surfaces */
+
+    --muted: 0 0% 22%;               /* #3A3A3A - secondary accent */
+    --muted-foreground: 0 0% 60%;    /* #9A9A9A - muted text */
+
+    --accent: 0 0% 100%;             /* #FFFFFF - pure white highlights */
+    --accent-foreground: 0 0% 6%;    /* dark text on white accent */
+
+    --border: 0 0% 22%;              /* #3A3A3A - subtle borders */
+    --ring: 0 0% 100%;               /* white focus rings */
+
+    /* Keep some existing tokens for compatibility */
+    --card: 0 0% 11%;
+    --card-foreground: 0 0% 93%;
+    --popover: 0 0% 11%;
+    --popover-foreground: 0 0% 93%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 6%;
+    --secondary: 0 0% 11%;
+    --secondary-foreground: 0 0% 93%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 93%;
+    --input: 0 0% 22%;
+
+    --radius: 0.75rem;
+
+    /* Typography scale */
+    --font-size-hero: 4rem;
+    --font-size-section: 2.5rem;
+    --font-size-title: 1.5rem;
+    --font-size-body: 1rem;
+    --font-size-caption: 0.875rem;
+
+    /* Spacing scale */
+    --spacing-section: 8rem;
+    --spacing-element: 2rem;
+
+    /* Animation durations */
+    --duration-fast: 200ms;
+    --duration-normal: 400ms;
+    --duration-slow: 800ms;
+
+    /* Gradients */
+    --gradient-reveal: linear-gradient(180deg, transparent 0%, hsl(var(--background)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--muted)) 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
